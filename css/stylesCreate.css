@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --white-color:hsl(0,0%,100%);
+    --black-color:hsl(0,0%,0%);
+    --primery-color:#609A33;
+    --body-font: Montserrat;
+    --body-font-lora: serif;
+    --h1-font-size: 1.75rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .813rem;
+    --font-medium: 500;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    
+
+}
+body,
+input,
+button{
+    font-size: var(--normal-font-size);
+    font-family: var(--body-font);
+}
+
+body{  
+    color: var(--white-color);
+    overflow-x: hidden;
+}
+
+input,
+button{
+    border: none;
+    outline: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    
+}
+.logo{
+  margin: -15px 0px;
+  height: 100px;
+  width: 120px;
+  z-index: 1;
+  position: absolute;
+  object-fit: unset;
+}
+.login{
+    position: relative;
+    height: 128vh;
+    display: grid;
+    align-items: baseline;
+
+}
+
+.login__img{
+    width: 100%;
+    position: fixed;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(40%) contrast(100%);
+  }
+
+.container {
+    margin-top: 350px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white-color);
+
+}
+.navigator{
+  z-index: 99;
+    position: fixed;
+    width: 100%;
+    transition: all 0.3s ease;
+
+}
+.containerTop{
+    width: 100%;
+    height: 40px;
+    background-color: var(--primery-color) ;
+    z-index: 99;
+}
+
+.icon-button {
+    float: right;
+    color: var(--white-color);
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 15px;
+}
+.icon-button i{
+    margin-right: 10px;
+    transition: color 0.5s ease;
+    
+}
+i:hover{
+    color: var(--black-color);
+}
+.click-mail{
+    font-family: var(--body-font);
+    color: var(--white-color);
+    display: inline-flex;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 15px;
+    transition: color 0.8s ease;
+}
+.fa-envelope{
+    margin-top: 2px;
+    margin-right: 2px;
+}
+.click-mail:hover{
+    color: var(--black-color);
+    z-index: 2;
+}
+
+#navbar {
+    margin-top: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    background-color: var(--white-color);
+    transition: top 0.9s ease , bottom 0.9s ease; 
+    transition: background-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+#navbar ul {
+    font-size: 16px;
+    font-weight: 600;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    padding-left: 25%;
+}
+
+#navbar ul li {
+    float: left;
+}
+
+#navbar ul li a {
+    display: block;
+    color: var(--black-color);
+    text-align: center;
+    padding: 30px 16px;
+    text-decoration: none;
+}
+
+#navbar :hover{
+    color: var(--primery-color);
+}
+
+.navigator__bar i{
+    font-size: 20px;
+    float: right;
+    margin-right: 20px;
+    margin-top: 22px;
+    color: black;
+    transition: color 0.7s ease;
+    transition: font-size 0.3s ease;
+}
+.navigator__bar i:hover{
+    font-size: 22px;
+}
+
+.titleAccount{
+  font-family: var(--body-font-lora);
+  font-weight: 300;
+  font-size: 36px;
+  margin: 230px 37%;
+  color: var(--white-color);
+  z-index: 1;
+  display: ruby;
+}
+.home__account{
+  font-family: var(--body-font-lora);
+  font-size: 18px;
+  padding: 280px 44%;
+  color: var(--white-color);
+  position: absolute;
+  display: ruby;
+}
+.home__account a{
+  color: var(--white-color);
+  transition: color 0.8s ease;
+}
+.home__account a:hover{
+  color: var(--primery-color);
+}
+
+.login__form {
+  margin-inline: 1.5rem;
+  padding: 2.5rem 1.5rem;
+  padding-top: 100px;
+}
+.login__title {
+  text-align: center;
+  font-size: 38px;
+  font-weight: 900;
+  color: var(--black-color);
+  margin-bottom: 2rem;
+  font-family: serif;
+}
+.login__content, .login__box {
+  display: grid;
+}
+.login__content {
+  row-gap: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+.login__box{
+  align-items: center;
+  column-gap: 0.75rem;
+  border: 1px solid rgba(0, 0, 0, 0.731);
+  border-radius: 4px;
+  width: 50%;
+  margin: 0 auto;
+}
+.login__box input:focus {
+  border-radius: 4px;
+  border: 1.5px solid var(--primery-color);
+}
+
+.login__icon, .login__eye {
+  font-size: 1.25rem;
+  color: var(--black-color);
+}
+.login__input {
+  width: 100%;
+  padding-block: 0.8rem;
+  background: none;
+  color: var(--black-color);
+  position: relative;
+  z-index: 1;
+  padding-left: 20px;
+}
+
+.login__box-input {
+  position: relative;
+}
+.login__label {
+  font-family: "Lora", serif;
+  position: absolute;
+  left: 10px;
+  top: 12px;
+  font-weight: 300;
+  transition: top 0.4s, 
+  font-size 0.3s;
+  color: rgba(0, 0, 0, 0.443);
+}
+.login__eye {
+  position: absolute;
+  right: 8px;
+  top: 11px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.login__check {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center; 
+}
+.login__register {
+  text-align: center;
+  margin-left: 100px;
+}
+.login__register a {
+  color: var(--primery-color);
+  font-weight: var(--font-medium);
+  transition: color 0.6s ease;
+}
+.login__register a:hover {
+  color: var(--black-color);
+}
+
+.login__button {
+    width: 120px; 
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--black-color);
+    font-weight: var(--font-medium);
+    cursor: pointer;
+    margin-bottom: 2rem;
+    color: var(--white-color);
+    transition: background-color 0.8s ease;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
+.login__button:hover{
+    background-color: var(--primery-color);
+}
+.login__input:focus + .login__label {
+  top: -20px;
+  font-size: var(--small-font-size);
+}
+
+.login__input:not(:placeholder-shown).login__input:not(:focus) + .login__label {
+  top: -16px;
+  font-size: var(--small-font-size);
+}
+
+#scrollToTopBtn {
+  /* display: none; */
+  position: fixed;
+  bottom: 15px;
+  right: 35px;
+  z-index: 99;
+  background-color:var(--black-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 40px;
+  font-size: 35px;
+}
+#scrollToTopBtn:hover{
+  position: fixed;
+  bottom: 15px;
+  right: 35px;
+  background-color:var(--primery-color);
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  /* cursor: pointer; */
+  width: 40px;
+  font-weight: 900;
+  box-shadow: 1px 0px 5px 1px rgba(69, 69, 69, 0.58);
+}
+.loading-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+                        /* footer */
+footer {
+  margin-top: -10px;
+  margin-bottom: 0;
+  background-color: rgb(96, 154, 51);
+}
+
+footer .last {
+  font-family: "Roboto";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+  height: 240px;
+  color: rgb(2, 2, 2);
+}
+
+.tlast {
+  text-align: center;
+  padding: 10px;
+  color: rgb(0, 0, 0);
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  font-family: "Source Sans Pro";
+  align-self: center;
+}
+
+.box h5 {
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.box span {
+  font-weight: 300;
+  padding: 5px;
+}
+
+
+.box a {
+  opacity: 0.8;
+  color: rgb(0, 0, 0);
+}
+
+.social svg {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+}
+
+.box a:hover {
+  text-decoration: underline;
+  opacity: 1;
+}
+
+.social {
+  margin-top: 170px;
+  display: inline-block;
+}
+
+.fb:hover {
+  fill: #4267b2;
+}
+
+.tw:hover {
+  fill: #00acee;
+}
+
+.insta:hover {
+  fill: #e1306c;
+}
+
+.box .col {
+  display: flex;
+  align-items: center;
+}
+
+.box .col p,
+.box .col svg {
+  padding: 5px;
+  font-size: 15px;
+}
+
+.box .col svg {
+  width: 35px;
+  height: 35px;
+}
+
+@media (max-width: 767px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 992x) {}
+
+@media (max-width: 1200px) {
+  #products .row {
+      flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1400px) {}
+
+.contact {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
+.box_left .col_left .box_left {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.box_left .col_left p,
+.box_left .col_left svg {
+  padding: 5px;
+  font-size: 15px;
+}
+
+.box_left .col_left svg {
+  width: 35px;
+  height: 35px;
+}
+.logof{
+  height: 150px;
+  width: 150px;
+  z-index: 1;
+  position: absolute;
+  object-fit: unset;
+  background-color: #fff;
+  border-radius: 10%;
+}

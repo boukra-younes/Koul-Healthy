@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --white-color:hsl(0,0%,100%);
+    --black-color:hsl(0,0%,0%);
+    --primery-color:#609A33;
+    --body-font: Montserrat;
+    --body-font-lora: serif;
+    --h1-font-size: 1.75rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .813rem;
+    --font-medium: 500;
+}
+
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.19rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    min-height: 100vh;
+    width: 100%;
+    color: #000000;
+}
+
+.All {
+    background-image: url('./3333.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    
+}
+
+
+.All h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding-top: 160px;
+    font-family: serif;
+}
+
+.id {
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.id h4{
+    margin-top: 8px;
+}
+
+.id a:hover{
+    color: #609a33;
+}
+
+.navbar {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 32px;
+    backdrop-filter: blur(15px);
+}
+
+.navbar .right_nav,
+.navbar .center_nav {
+    list-style-type: none;
+}
+
+.navbar .right_nav li,
+.navbar .center_nav li {
+    display: inline-block;
+}
+
+.navbar .right_nav li {
+    padding: 0 8px;
+}
+
+.navbar .center_nav li {
+    padding: 0 16px;
+}
+
+.navbar .center_nav a {
+    position: relative;
+}
+
+.navbar .center_nav a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #609a33;
+    transition: .3s;
+}
+
+.navbar .center_nav a:hover::before {
+    width: 100%;
+}
+
+a:not(.btn, .bag) {
+    text-decoration: none;
+    color: #000000;
+    padding: 8px;
+}
+
+.navbar .center_nav :hover {
+    transform: scale(1.05);
+    color: #609a33;
+}
+
+.right_nav span{
+    color: var(--primery-color);
+    font-size: 15px;
+    display: flex;
+    position: absolute;
+    right: 44px;
+    top: 25px;
+}
+
+
+.navbar h3 a {
+    text-transform: uppercase;
+    font-size: 32px;
+    color: #609a33;
+}
+
+.bag {
+    height: 23px;
+    width: 30px;
+    align-items: center;
+    fill: black;
+    
+
+}
+
+.system{
+    overflow: hidden;
+    
+}
+
+.title{
+    margin: 80px 0 0 90px;
+    font-size: 30px;
+    display: block;
+}
+
+.Day{
+    margin: 20px 0 10px 80px;
+    width: 89%;
+    height: 80vh;
+    display: flex;
+    border: rgb(171, 170, 170) 1px solid;
+    border-radius: 10px;
+    
+}
+
+.Day h3{
+    margin-top: -10%;
+    margin-left: 25%;
+    margin-bottom: 3%;
+}
+
+
+.prdct{
+    border: var(--primery-color) 1px solid;
+    position: relative;    
+    width: 80%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 10px 40px;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.more{
+    display: flex;
+
+}
+
+
+.more img{ 
+    width: 70%;
+    padding-top: 10px;
+    margin-left: 40px;
+}
+
+
+
+
+.mysvg{
+    margin-left:10px;
+    margin-top: 68px;
+    width: 15%;
+    
+}
+
+
+
+.mysvg svg{
+
+    display: none;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    background: white;
+    width: 40px;
+    height: 40px;
+    fill: var(--primery-color);
+    stroke: var(--primery-color);
+    
+}
+
+
+.mysvg svg:hover{
+    background: var(--primery-color);
+    fill: var(--white-color);
+    stroke: var(--white-color);
+}
+
+
+
+.info{
+    text-align: center;
+    font-size: 18px;
+}
+
+.info a{
+    color: #609a33;
+    font-size: 27px;
+    font-family: serif;
+}
+
+.stars{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+.prdct:hover .mysvg svg{
+    display: block;
+    
+}
+

@@ -1,0 +1,24 @@
+.all{
+    display: flex;
+
+}
+.left{
+    
+    height: 100%;
+    width: 60%;
+    border-right: #a2a1a1 1px solid;
+    padding: 20px;
+}
+.insideleft{
+    display: block;
+    margin-left: 400px;
+}
+.right{
+    height: 100%;
+    width: 40%;
+    
+}
+input{
+    height: 30px;
+    width: 100px;
+}

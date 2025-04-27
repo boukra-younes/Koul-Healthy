@@ -1,0 +1,82 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    height: 80vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+    width: 25%;
+    background-color: #fff;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar .order {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.sidebar .order button {
+    padding: 5px 10px;
+    background-color: #609a33;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.sidebar .order button:hover {
+    background-color: #000000;
+}
+
+.main-content {
+    width: 75%;
+    padding: 20px;
+    background-color: #fff;
+    overflow-y: auto;
+}
+
+.client-details form {
+    display: flex;
+    flex-direction: column;
+}
+
+.client-details label, .client-details input {
+    margin-bottom: 10px;
+}
+
+.client-details button {
+    padding: 10px;
+    background-color: #609a33;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.client-details button:hover {
+    background-color: #000000;
+}
+
